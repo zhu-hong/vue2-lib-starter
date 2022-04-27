@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <el-button :type="go ? 'primary' : 'danger'" @click="go = !go" size="small" icon="el-icon-magic-stick">GO</el-button>
+  <el-button class="w-132px" :type="go ? 'primary' : 'danger'" @click="go = !go" size="small" icon="el-icon-magic-stick">GO</el-button>
 </template>
 
 <style lang="scss">

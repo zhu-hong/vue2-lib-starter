@@ -3,6 +3,7 @@ import NodeResolve from '@rollup/plugin-node-resolve'
 import Postcss from 'rollup-plugin-postcss'
 import Vue from 'rollup-plugin-vue'
 import Url from '@rollup/plugin-url'
+import WindiCSS from 'rollup-plugin-windicss'
 
 export default [
   Commonjs(),
@@ -17,6 +18,14 @@ export default [
     include: ['**/*.ttf', '**/*.woff'],
     fileName: '[name][extname]',
     destDir: 'dist/fonts',
+  }),
+  ...WindiCSS({
+    config: {
+      preflight: false,
+      extract: {
+        exclude: ['./src/theme/*.css'],
+      },
+    },
   }),
 ]
 
