@@ -19,7 +19,7 @@ export default [
     ],
   }),
   Url({
-    include: ['**/*.ttf', '**/*.woff'],
+    include: ['**/*.ttf', '**/*.woff', '**/*.svg', '**/*.png'],
     fileName: '[name][extname]',
     destDir: 'dist/fonts',
   }),

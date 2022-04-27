@@ -1,3 +1,3 @@
 <template>
-  <Go />
+  <Starter />
 </template>
