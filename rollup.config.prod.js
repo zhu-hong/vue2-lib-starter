@@ -1,5 +1,5 @@
 import { defineConfig } from 'rollup'
-import commonPlugin from './rollup.config.plugin'
+import commonPlugin from './rollup.config.plugin.js'
 import { babel } from '@rollup/plugin-babel'
 import { terser } from 'rollup-plugin-terser'
 
@@ -7,7 +7,7 @@ export default defineConfig({
   input: './src/index.js',
   output: {
     format: 'esm',
-    file: 'dist/lib.js',
+    file: 'dist/index.min.js',
     sourcemap: true,
   },
   plugins: [

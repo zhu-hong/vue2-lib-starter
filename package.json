@@ -1,7 +1,7 @@
 {
   "name": "vue2-lib-starter",
   "version": "0.0.0",
-  "main": "dist/lib.js",
+  "main": "dist/index.min.js",
   "files": [
     "dist"
   ],
@@ -34,5 +34,9 @@
     "vue": "2.6.14",
     "vue-template-compiler": "2.6.14"
   },
-  "browserslist": "> 0.25%, not dead"
+  "browserslist": [
+    "> 1%",
+    "last 2 version",
+    "not dead"
+  ]
 }
