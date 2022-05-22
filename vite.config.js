@@ -1,15 +1,19 @@
 import { defineConfig } from 'vite'
 import { createVuePlugin } from 'vite-plugin-vue2'
-import WindiCSS from 'vite-plugin-windicss'
+import UnoCSSPlugin from 'unocss/vite'
+import { presetUno } from 'unocss'
 
 export default defineConfig({
   root: 'playground',
   plugins: [
     createVuePlugin(),
-    WindiCSS(),
+    UnoCSSPlugin({
+      presets: [
+        presetUno(),
+      ],
+    }),
   ],
   server: {
     open: true,
-    port: 3000,
   },
 })
