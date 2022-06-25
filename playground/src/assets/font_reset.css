@@ -7,10 +7,10 @@ body {
   font-family: system-ui, —apple-system, Segoe UI, Rototo, Emoji, Helvetica, Arial, sans-serif;
 }
 /* 衬线字体 */
-.font-serif {
+.fontserif {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
 /* 等宽字体 */
-.font-mono {
+.fontmono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }

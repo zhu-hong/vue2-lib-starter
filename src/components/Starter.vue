@@ -2,7 +2,9 @@
 </script>
 
 <template>
-  <h1 class="starter-title">GOGO</h1>
+  <h1 class="starter-title">
+    <span>GOGO</span>
+  </h1>
 </template>
 
 <style lang="postcss">

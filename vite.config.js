@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue2'
 import unocss from 'unocss/vite'
-import { presetMini } from 'unocss'
+import { presetWind } from 'unocss'
 import nested from 'postcss-nested'
 
 export default defineConfig({
@@ -16,8 +16,9 @@ export default defineConfig({
     }),
     unocss({
       presets: [
-        presetMini(),
+        presetWind(),
       ],
+      include: ['playground/**/*'],
     }),
   ],
   server: {
