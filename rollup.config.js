@@ -1,9 +1,9 @@
 import { defineConfig } from 'rollup'
 import commonjs from '@rollup/plugin-commonjs'
 import nodeResolve from '@rollup/plugin-node-resolve'
-import vue from 'rollup-plugin-vue'
 import postcss from 'rollup-plugin-postcss'
 import cssnano from 'cssnano'
+import vue from 'rollup-plugin-vue'
 
 export default defineConfig({
   input: './src/index.js',
@@ -15,14 +15,11 @@ export default defineConfig({
   plugins: [
     commonjs(),
     nodeResolve(),
-    vue({
-      css: false,
-    }),
     postcss({
       extract: 'style.css',
-      plugins: [
-        cssnano(),
-      ],
+    }),
+    vue({
+      css: false,
     }),
   ],
 })
