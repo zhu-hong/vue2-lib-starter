@@ -10,7 +10,7 @@ export default defineConfig({
   output: {
     format: 'esm',
     file: 'dist/index.js',
-    sourcemap: true,
+    sourcemap: false,
   },
   plugins: [
     commonjs(),
