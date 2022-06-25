@@ -1,3 +1,7 @@
+<script setup>
+import Starter from '../../src/components/Starter.vue'
+</script>
+
 <template>
-  <Starter />
+  <Starter class="border" />
 </template>

@@ -1,14 +1,11 @@
-<script>
-export default {
-  name: 'Starter',
-}
+<script setup>
 </script>
 
 <template>
-  <h1 class="starter-title">GG</h1>
+  <h1 class="starter-title">GOGO</h1>
 </template>
 
-<style lang="scss">
+<style lang="postcss">
 .starter {
   &-title {
     margin: 0;
