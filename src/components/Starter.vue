@@ -7,7 +7,7 @@
   </h1>
 </template>
 
-<style lang="postcss">
+<style lang="scss">
 .starter {
   &-title {
     margin: 0;

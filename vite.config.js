@@ -1,19 +1,12 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue2'
+import { createVuePlugin as vue } from 'vite-plugin-vue2'
 import unocss from 'unocss/vite'
 import { presetWind } from 'unocss'
-import nested from 'postcss-nested'
 
 export default defineConfig({
   root: 'playground',
   plugins: [
-    vue({
-      style: {
-        postcssPlugins: [
-          nested(),
-        ],
-      }
-    }),
+    vue(),
     unocss({
       presets: [
         presetWind(),

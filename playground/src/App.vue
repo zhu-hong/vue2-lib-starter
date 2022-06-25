@@ -6,7 +6,7 @@ import Starter from '../../src/components/Starter.vue'
   <Starter class="border p-2 starter fontmono" />
 </template>
 
-<style lang="postcss">
+<style lang="scss">
 .starter {
   span {
     text-transform: lowercase;
